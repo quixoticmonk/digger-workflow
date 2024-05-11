@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "this" {
   bucket = "test-bucket-2024"
 }
 
-resource "aws_s3_bucket" "this" {
+resource "aws_s3_bucket" "this2" {
   bucket = "test-bucket-20242"
 }
 
