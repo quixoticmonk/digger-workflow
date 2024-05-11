@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: diggerhq/digger@v0.4.17
+      - uses: diggerhq/digger@58268902112a95419a06791dc2f558cd96a81ff9  # v0.4.17
         with:
           setup-aws: true
           aws-role-to-assume: ${{secrets.IAM_ROLE}}
