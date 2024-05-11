@@ -2,6 +2,10 @@ resource "aws_s3_bucket" "this" {
   bucket = "test-bucket-2024"
 }
 
+resource "aws_s3_bucket" "this" {
+  bucket = "test-bucket-20242"
+}
+
 
 terraform {
 required_providers {
