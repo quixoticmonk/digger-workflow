@@ -4,6 +4,13 @@ resource "aws_s3_bucket" "this" {
 
 
 terraform {
+
+  backend "s3" {
+    bucket         = "manuchandrasekhar-tfstate"
+    key            = "test"
+    region         = "us-east-1"
+    dynamodb_table = "tfstate"
+  }
 required_providers {
     aws = {
       source  = "hashicorp/aws"
