@@ -1,3 +1,5 @@
+telemetry: false
+auto_merge: false
 projects:
 - name: production
   dir: .
