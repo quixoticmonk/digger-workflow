@@ -3,3 +3,12 @@ auto_merge: false
 projects:
 - name: production
   dir: .
+workflows:
+  production:
+      steps:
+        - init
+        - plan
+        - run: checkov -d . --framework terraform
+      workflow_configuration:
+         on_pull_request_pushed: [digger plan]
+         on_commit_to_default: [digger apply]
