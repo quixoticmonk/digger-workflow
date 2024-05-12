@@ -10,10 +10,9 @@ resource "aws_s3_bucket" "this2" {
 terraform {
 
   backend "s3" {
-    bucket         = "manuchandrasekhar-tfstate"
+    bucket         = "digger-tfstate"
     key            = "test"
     region         = "us-east-1"
-    dynamodb_table = "tfstate"
   }
 required_providers {
     aws = {
