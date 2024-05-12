@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "this" {
-  bucket = "test-bucket-2024"
+  bucket = "test-bucket-20242"
 }
 
 resource "aws_s3_bucket" "this2" {
-  bucket = "test-bucket-20242"
+  bucket = "test-bucket-202421"
 }
 
 
